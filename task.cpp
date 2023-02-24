@@ -14,6 +14,15 @@ float getAverage(vector<int> &v)
     return avg;
 
 }
+int getMin(vector<int> &v)
+{
+    int minvLAUE=100000000;
+    for(int i=0;i<v.size();i++)
+    {
+        minvLAUE = min(v[i], minvLAUE);
+    }
+    return minvLAUE;
+}
 int main()
 {
 
@@ -22,4 +31,5 @@ vector<int> v;
     v.push_back(i);
     cout<<getSum(v)<<endl;
     cout<<getAverage(v)<<endl;
+    cout<<getMin(v)<<endl;
 }
